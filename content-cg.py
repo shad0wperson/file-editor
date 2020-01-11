@@ -7,7 +7,7 @@ def replaceStr(file):
     with open(file, 'r', encoding='utf-8') as f:
         str = f.read()
         print(str)
-       
+        #匹配内容的正则表达式
         str1 = re.sub(r'<img(.*?)/>',r'<p align="center"><img \1/></p>', str)
         
         with open(file,'w', encoding='utf-8') as f:
